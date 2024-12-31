@@ -1,0 +1,24 @@
+name: prompt_learning_env
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - pytorch
+  - torchvision
+  - torchaudio
+  - jupyterlab
+  - cudatoolkit=11.3 # Adjust for your GPU or CPU requirements
+  - pip:
+      - openprompt==1.0.1 # OpenPrompt library
+      - transformers==4.25.0 # HuggingFace's Transformers library for LLMs
+      - sentencepiece # Needed for certain model tokenization
+      - nltk # Natural Language Toolkit for text processing
+      - datasets # HuggingFace Datasets library for loading benchmark datasets
+      - evaluate # For model evaluation metrics
