@@ -3,6 +3,49 @@
 This repository contains a collection of Jupyter notebooks that demonstrate various prompt-based learning techniques applied to natural language processing (NLP) tasks. The focus is on utilizing **prompt engineering** to adapt pre-trained models for tasks like reading comprehension, question answering, and binary classification. The notebooks explore methods like **manual templates**, **prefix tuning**, and **p-tuning**, leveraging popular pre-trained models such as **T5**, **RoBERTa**, and **GPT-2**.
 
 ---
+## Main Environment Factors
+
+This repository relies on a Python environment configured for machine learning and NLP tasks. Below are the key environment specifications derived from the provided `environment.yml`:
+
+### 1. **Python Version**
+- Python 3.10 is the base version for compatibility with required libraries.
+
+### 2. **Key Libraries**
+- **Numpy**, **Pandas**: For data manipulation and preprocessing.
+- **Scikit-learn**: For additional machine learning utilities.
+- **Matplotlib**, **Tqdm**: For data visualization and progress tracking.
+
+### 3. **Machine Learning Frameworks**
+- **PyTorch** (including `torchvision`, `torchaudio`): For deep learning model implementation.
+- **CUDA Toolkit 11.3**: For GPU acceleration (ensure compatibility with your GPU).
+
+### 4. **NLP-Specific Libraries**
+- **HuggingFace Transformers (v4.25.0)**: For pre-trained models like T5, RoBERTa, and GPT-2.
+- **OpenPrompt (v1.0.1)**: Core library for prompt-based learning techniques.
+- **SentencePiece**: For tokenizer compatibility with certain models.
+- **NLTK**: For additional text preprocessing utilities.
+- **Datasets**, **Evaluate**: HuggingFace libraries for benchmark dataset loading and model evaluation.
+
+### 5. **Development Environment**
+- **JupyterLab**: For running and experimenting with the provided notebooks.
+
+---
+
+## How to Set Up
+
+### 1. **Using Conda**
+To replicate the environment, create a Conda environment using the provided `environment.yml` file:
+```bash
+conda env create -f environment.yml 
+```
+### 2. Activate the Environment
+Activate the environment for use:
+```bash
+conda activate prompt_learning_env
+```
+---
+### 3. GPU Compatibility
+Ensure that your system supports CUDA Toolkit 11.3 for GPU acceleration. If using a CPU-only setup, remove cudatoolkit=11.3 from the environment.yml file and install an appropriate CPU-compatible PyTorch version.
 
 ## Contents
 
